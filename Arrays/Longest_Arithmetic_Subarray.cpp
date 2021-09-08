@@ -1,5 +1,12 @@
 /*
     Print the maximum length of subarray having elements such that the difference between the elements is same.
+    
+    Sample input and output:
+    Enter size of array:
+    5
+    Enter 5 elements for array:
+    4 2 6 17 8
+    Maximum Length of Subarray: 2
 */
 
 #include<iostream>
