@@ -3,6 +3,20 @@
     
     Brute Force (Linear Search) -> O(n^2)
     Faster method -> O(n)
+    
+    Sample input and output:
+    Enter m and n:
+    4 4
+    Enter 16 elements:
+    1 2 3 4
+    5 6 7 8
+    9 10 11 12
+    13 14 15 16
+    Enter element to be searched:
+    7
+    Element found at position (1, 2)
+    
+    Answer is in format of (row, column)
 */
 #include<iostream>
 #include<algorithm>
@@ -30,7 +44,7 @@ int main()
     cin >> k;
     int flag = 0;
     int p1, p2;
-    while(r < n && c >= 0)
+    while(r < m && c >= 0)
     {
         if(k > arr[r][c])
         {
