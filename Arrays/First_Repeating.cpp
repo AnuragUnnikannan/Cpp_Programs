@@ -1,5 +1,12 @@
 /*
-    Print the first occurrence of the element that is repeated.
+    Print the position of first occurrence of the element that is repeated. (Answer is in 1 based indexing)
+    
+    Sample Input & Output
+    Enter number of elements:
+    5
+    Enter 5 elements:
+    7 2 17 2 4
+    2
 */
 
 #include<iostream>
@@ -33,13 +40,6 @@ int main()
         {
             //storing index of each element
             idx[arr[i]] = i;
-        }
-    }
-    for(int i = 0;i<N;i++)
-    {
-        if(idx[i]!=-1)
-        {
-            cout << idx[i] << " ";
         }
     }
     //if no repetition
