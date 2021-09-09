@@ -48,10 +48,12 @@ int main()
     {
         if(k > arr[r][c])
         {
+            //if key element is greater, then move 1 row down
             r++;
         }
         else if(k < arr[r][c])
         {
+            //if key element is smaller, then move 1 column left
             c--;
         }
         else
