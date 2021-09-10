@@ -1,11 +1,19 @@
 /*
     Print the sum of maximum circular subarray
+    
+    Sample input and output:
+    Enter number of elements:
+    8
+    Enter 8 elements:
+    10 -20 35 40 10 -10 100 -50
+    175
 */
 #include<iostream>
 #include<algorithm>
 using namespace std;
 int kadane(int arr[], int n)
 {
+    //Kadane's Algorithm returns maximum subarray sum subarray length is n
     int maxSum = arr[0];
     int maxSoFar = arr[0];
     for(int i = 1;i<n;i++)
@@ -32,6 +40,11 @@ int main()
     }
     int wrapSum;
     int nonWrapSum;
+    
+    /*
+    First we find the nonWrapSum using kadane's algorithm. Then invert the sign of each element in the array, and again use kadane's algorithm. The sum of totalSum and newly obtained result from kadane's algorithm is the wrapSum. The maximum of nonWrapSum and wrapSum is our required answer.
+    */
+    
     //storing maximum sum of subarray (nonwrapped means, non circular)
     nonWrapSum = kadane(arr, n);
     int totalSum = 0;
