@@ -1,5 +1,12 @@
 /*
     Print maximum sum of subarray of an array
+    
+    Sample input and output:
+    Enter number of elements:
+    5
+    Enter 5 elements:
+    2 -7 17 -4 -35 12
+    17
 */
 
 #include<iostream>
