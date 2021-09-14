@@ -1,5 +1,5 @@
 /*
-    Check if there exists 2 elements in an array such that their sum is equal to given k. If equal print the index of those 2 elements.
+    Check if there exists 2 elements in an array such that their sum is equal to given k. If equal print the index of those 2 elements.0
     
     Sample imput and output:
     Enter number of elements:
