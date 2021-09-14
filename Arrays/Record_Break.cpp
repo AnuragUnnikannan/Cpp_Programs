@@ -1,5 +1,12 @@
 /*
     A day is said to be a record breaking day if, number of visitors in that day is greater than all the previous days AND also greater than the following day. Count the number of record breaking days.
+    
+    Sample input and output:
+    Enter number of elements:
+    5
+    Enter 5 elements:
+    4 3 7 5 12
+    3
 */
 
 #include<iostream>
@@ -22,7 +29,7 @@ int main()
     }
     int mx = -1;
     int count = 0;
-    for(int i = 0;i<n-1;i++)
+    for(int i = 0;i<n;i++)
     {
         if(arr[i] > mx && arr[i] > arr[i+1])
         {
