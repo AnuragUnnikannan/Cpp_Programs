@@ -1,5 +1,14 @@
 /*
-    Check if there exists 2 elements in an array such that their sum is equal to given k
+    Check if there exists 2 elements in an array such that their sum is equal to given k. If equal print the index of those 2 elements.
+    
+    Sample imput and output:
+    Enter number of elements:
+    5
+    Enter 5 elements:
+    2 4 7 17 35
+    Enter sum:
+    9
+    0 2
 */
 #include<iostream>
 #include<algorithm>
