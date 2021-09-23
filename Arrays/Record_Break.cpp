@@ -27,7 +27,7 @@ int main()
         cout << 1 << endl;
         return 0;
     }
-    int mx = -1;
+    int mx = INT_MIN;
     int count = 0;
     for(int i = 0;i<n;i++)
     {
