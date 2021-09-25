@@ -1,5 +1,18 @@
 /*
     Print spiral matrix
+    
+    Sample input and output:
+    
+    Enter m and n:
+    5 5
+    
+    1       2       3       4       5
+    6       7       8       9       10
+    11      12      13      14      15
+    16      17      18      19      20
+    21      22      23      24      25
+    
+    1 2 3 4 5 10 15 20 25 24 23 22 21 16 11 6 7 8 9 14 19 18 17 12 13
 */
 #include<iostream>
 #include<algorithm>
@@ -18,7 +31,7 @@ int main()
             cin >> arr[i][j];
         }
     }
-
+    cout << endl;
     for(int i = 0;i<m;i++)
     {
         for(int j = 0;j<n;j++)
@@ -27,7 +40,7 @@ int main()
         }
         cout << endl;
     }
-
+    cout << endl;
     int top = 0, bottom = m-1, left = 0, right = n-1;
     int dir = 0;
     /*
