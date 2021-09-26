@@ -1,5 +1,15 @@
 /*
-    Print the start index and end index of the array that is equal to the sum entered by user.
+    Print the start index and end index (1 based indexing) of the array that is equal to the sum entered by user.
+    
+    Sample input and output:
+    
+    Enter number of elements:
+    6
+    Enter 6 elements:
+    2 7 17 4 35 12
+    Enter sum:
+    56
+    3 5
 */
 
 #include<iostream>
