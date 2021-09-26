@@ -30,16 +30,21 @@ int main()
     cin >> sum;
     int  i = 0, j = 0, st = -1, en = -1, currSum = 0;
     //st -> for storing final start index   en -> for storing final end index
+    
+    //initial try: store sum till it is less than given sum.
     while(j<n && currSum + arr[j] <= sum)
     {
         currSum += arr[j];
         j++;
     }
+    //if we have already got the required sum, then terminate the program.
     if(currSum == sum)
     {
         cout << i+1 << " " << j << endl;
         return 0;
     }
+    
+    //second attempt: if currSum still less than sum.
     while(j < n)
     {
         currSum += arr[j];
