@@ -9,7 +9,7 @@ using namespace std;
 int main()
 {
     string str;
-    cout << "Enter string:" << endl;
+    cout << "Enter string in lower case:" << endl;
     getline(cin, str);
     cout << endl;
     int freq[26];
@@ -17,6 +17,8 @@ int main()
     {
         freq[i] = 0;
     }
+    //converting to lower case
+    transform(str.begin(), str.end(), str.begin(), ::tolower);
     for(int i = 0;i < str.length();i++)
     {
         /*
@@ -24,7 +26,10 @@ int main()
             str[0] - a = 0
             therefore, freq[0]++ => 1
         */
-        freq[str[i] - 'a']++;
+        if(str[i]!=' ' && str[i]!='.')
+        {
+            freq[str[i] - 'a']++;
+        }
     }
     int maxFreq = INT_MIN;
     char ans = 'a';
