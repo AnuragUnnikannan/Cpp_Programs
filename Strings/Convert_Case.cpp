@@ -8,7 +8,7 @@ using namespace std;
 int main()
 {
     string str;
-    cout << "Enter a string in lower case:" << endl;
+    cout << "Enter a string:" << endl;
     getline(cin, str);
     cout << endl;
     //for lower to upper
@@ -27,7 +27,7 @@ int main()
     {
         if(str[i] >= 'A' && str[i] <= 'Z')
         {
-            //by adding 332, the string gets converted to lowercase
+            //by adding 32, the string gets converted to lowercase
             str[i] += 32;
         }
     }
