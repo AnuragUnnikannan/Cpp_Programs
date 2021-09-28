@@ -25,7 +25,7 @@ int main()
     int currLen = 0, i = 0;
     while(1)
     {
-        if(arr[i] == ' ' || arr[i] == '\0')
+        if(arr[i] == ' ')
         {
             if(currLen > maxLen)
             {
@@ -35,13 +35,13 @@ int main()
             st = i+1;
             currLen = 0;
         }
+        else if(arr[i] == '\0')
+        {
+            break;
+        }
         else
         {
             currLen++;
-        }
-        if(arr[i] == '\0')
-        {
-            break;
         }
         i++;
     }
